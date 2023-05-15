@@ -3,20 +3,19 @@
 use GeekBrains\LevelTwo\Blog\{User, Post};
 use GeekBrains\LevelTwo\Person\{Name, Person};
 
-spl_autoload_register('load');
+//spl_autoload_register('load');
 
-//include __DIR__ . "/vendor/autoload.php";
+include __DIR__ . "/vendor/autoload.php";
 
 function load($className)
 {
   $file = $className . ".php";
   $file = str_replace("\\", "/", $file);
-  $file = str_replace("GeekBrains\LevelTwo", "src", $file);
-  var_dump($className);
+  $file = str_replace("GeekBrains\LevelTwo", "src",  $file);
+  var_dump($file);
   if(file_exists($file)){
     include $file;
-  }
-  
+  } 
 }
 
 $name = new Name('Ivan', 'Sidorov');
