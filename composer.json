@@ -1,0 +1,15 @@
+{
+    "name": "geekbrains/leveltwo",
+    "autoload": {
+        "psr-4": {
+            "Geekbrains\\LevelTwo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "julias42",
+            "email": "artyom-zhulikov@yandex.ru"
+        }
+    ],
+    "require": {}
+}
